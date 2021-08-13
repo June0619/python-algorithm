@@ -14,6 +14,15 @@ def digit_sum(x):
     return return_value
 
 
+# definition digit_sum function ver.2
+def digit_sum_2(x):
+    return_value = 0
+    tmp = str(x)
+    for i in tmp:
+        return_value += int(i)
+    return return_value
+
+
 # input
 tc = int(input())
 numbers = list(map(int, input().split()))
