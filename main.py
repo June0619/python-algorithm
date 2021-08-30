@@ -2,7 +2,7 @@ import sys
 import time
 import random as r
 
-# sys.stdin = open('input.txt', 'rt')
+sys.stdin = open('input.txt', 'rt')
 start_time = time.time()
 
 
