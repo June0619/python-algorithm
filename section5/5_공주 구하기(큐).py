@@ -8,11 +8,12 @@ start_time = time.time()
 
 n, k = map(int, input().split())
 
-deq = deque()
-
+# deq = deque()
 # n명의 왕자를 큐에 대기시킴
-for i in range(1, n+1):
-    deq.append(i)
+# for i in range(1, n+1):
+#     deq.append(i)
+# 위 초기화 코드 합치기
+deq = deque(list(range(1, n+1)))
 
 # 초기 카운트
 cnt = 1
