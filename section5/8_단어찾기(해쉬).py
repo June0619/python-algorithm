@@ -14,9 +14,13 @@ for _ in range(tc):
 for _ in range(tc-1):
     words[input()] += 1
 
-for i in words:
-    if words[i] == 0:
-        print(i)
+# for i in words:
+#     if words[i] == 0:
+#         print(i)
+# dictionary 자료형에서 key 와 value 를 한번에 출력하는 방법
+for key, val in words.items():
+    if val == 0:
+        print(key)
 
 # 수행시간 체크
 print('수행시간 : ', time.time() - start_time)
